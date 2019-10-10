@@ -2,7 +2,7 @@
 This is a private cpd test program(so far)
 
 This repository contains the code used for this paper:
-[paper title](111.231.57.188)
+[paper title](http://111.231.57.188:81)  
 This paper aims to generate centroidal power diagram by gradient, newton method and BLST
 
 
