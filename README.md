@@ -16,9 +16,9 @@ This program only support Windows, which needs several libraries(We recommend to
 * Install *boost_1_59_0-msvc-14.0-32.exe*
 
 ## 1.2 set enviroment variable
-* **Path** += 
-* **BOOST_LIBRARYDIR** = 
-* **BOOST_INCLUDEDIR** = 
+* **Path** += C:\dev\boost_1_59_0\lib32-msvc-14.0;C:\dev\CGAL-4.14\build\bin;C:\dev\CGAL-4.14\auxiliary\gmp\lib;C:\dev\CGAL-4.14\lib;C:\dev\CGAL-4.14\build\bin\Debug;C:\dev\CGAL-4.14\build\bin\Release;
+* **BOOST_LIBRARYDIR** = C:\dev\boost_1_59_0\lib32-msvc-14.0
+* **BOOST_INCLUDEDIR** = C:\dev\boost_1_59_0
 
 ## 1.3 compile CGAL
 1 Open *cmake-gui.exe*  
@@ -73,3 +73,9 @@ libumfpack.lib;
 metis.lib;
 suitesparseconfig.lib;
 ;libblas.lib;liblapack.lib;%(AdditionalDependencies)  
+
+## 3.3 Other
+1. Copy **libmpfr-4.dll** and **libgmp-10.dll** from C:\dev\CGAL-4.14\auxiliary\gmp\lib to this project
+2. Copy **CGAL-vc140-mt-gd-4.14.dll** from C:\dev\CGAL-4.14\build\bin to this project
+3. **Path** += C:\dev\CGAL-4.14\build\bin;C:\dev\CGAL-4.14\auxiliary\gmp\lib;C:\dev\CGAL-4.14\lib;C:\dev\CGAL-4.14\build\bin\Debug;
+4. Run this project. If error C2589 happened, Open project properties->C/C++->preprocessor->preprocessor definition->Add NOMINMAX
