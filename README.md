@@ -21,15 +21,15 @@ This program only support Windows, which needs several libraries(We recommend to
 * **BOOST_INCLUDEDIR** = 
 
 ## 1.3 compile CGAL
-1.3.1 open *cmake-gui.exe*
-1.3.2 set **Where is source code** = C:/dev/CGAL-4.14, **Where build the binaries** = C:/dev/CGAL-4.14/build
-1.3.3 Click **Configure**,** Generate**, **Open Project** alternately
-1.3.4 Open CGAL.sln, Generate project **CGAL**(not the solution, solution CGAL includes 10 projects) in **Debug** and **Release** *alternately
+1.3.1 open *cmake-gui.exe*  
+1.3.2 set **Where is source code** = C:/dev/CGAL-4.14, **Where build the binaries** = C:/dev/CGAL-4.14/build  
+1.3.3 Click **Configure**,** Generate**, **Open Project** alternately  
+1.3.4 Open CGAL.sln, Generate project **CGAL**(not the solution, solution CGAL includes 10 projects) in **Debug** and **Release** *alternately  
 
 # 2.Download and compile SuiteSparse
 ## 2.1 Download [SuiteSparse](https://github.com/jlblancoc/suitesparse-metis-for-windows)
-unzip to C:/dev/suitesparse
-\set **SP_ROOT** = C:/dev/suitesparse
+unzip to C:/dev/suitesparse  
+set **SP_ROOT** = C:/dev/suitesparse
 ## 2.2 compile SuiteSparse
 
 
