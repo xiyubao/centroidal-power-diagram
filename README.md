@@ -1,10 +1,10 @@
 # centroidal-power-diagram
-This is a private cpd test program(so far)
+This is a private cpd test program with multiple itration method (Newton method, L-BFGS mthod and L-BFGS-B method)
 
 This repository contains the code used for this paper:
 [paper title](http://111.231.57.188:81)  
 This paper aims to generate centroidal power diagram by gradient, newton method and BLST
-
+additionly,  This program support generating voronoi treemap based on cpd
 
 This program only support Windows, which needs several libraries(We recommend to use version we wrote. We had't ran it based on other version)
 
