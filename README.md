@@ -36,20 +36,20 @@ Set **CUDA_BIN_PATH** = %CUDA_PATH%\bin
 Set **CUDA_LIB_PATH** = %CUDA_PATH%\lib\x64
 
 ## 2.2 Download [NVIDIA Cg Toolkit](https://developer.nvidia.com/cg-toolkit)
-We here use version 3.1
-auto unzip to C:\Program Files(x86)\NVIDIA Corporation\Cg
+We here use version 3.1  
+auto unzip to C:\Program Files(x86)\NVIDIA Corporation\Cg  
 Attention! When you install Cg Toolkit, you should click on the 64bit plugin because the default mode only install the 32 bit Cg
 
 # 3.Download Other Libraries
 ## 3.1 [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page)
-We here use version 3.3.1
+We here use version 3.3.1  
 unzip to C:\dev\eigen\eigen-eigen-323c052e1731
 ## 3.2 [Freeglut](https://nchc.dl.sourceforge.net/project/freeglut/freeglut/3.2.1/freeglut-3.2.1.tar.gz)
-We here use version 3.2.1
+We here use version 3.2.1  
 unzip to C:\dev\freeglut
 ## 3.3 [Glew](https://nchc.dl.sourceforge.net/project/glew/glew/2.1.0/glew-2.1.0-win32.zip)
-* We here use version 2.1.0
-* unzup to C:\dev\glew-2.1.0
+We here use version 2.1.0  
+unzup to C:\dev\glew-2.1.0
 
 
 # 4.Set Visual Studio enviroment
