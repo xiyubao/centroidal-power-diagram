@@ -29,16 +29,16 @@ This program only support Windows and only run in 64 bit, which needs several li
 
 # 2.Download CUDA
 ## 2.1 Download [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-We here use version 10.1
+We here use version 10.1  
 Unzip to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1  
-Set **CUDA_PATH** = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1
-Set **CUDA_BIN_PATH** = %CUDA_PATH%\bin
-Set **CUDA_LIB_PATH** = %CUDA_PATH%\lib\x64
+Set **CUDA_PATH** = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1  
+Set **CUDA_BIN_PATH** = %CUDA_PATH%\bin  
+Set **CUDA_LIB_PATH** = %CUDA_PATH%\lib\x64  
 
 ## 2.2 Download [NVIDIA Cg Toolkit](https://developer.nvidia.com/cg-toolkit)
 We here use version 3.1  
-auto unzip to C:\Program Files(x86)\NVIDIA Corporation\Cg  
-Attention! When you install Cg Toolkit, you should click on the 64bit plugin because the default mode only install the 32 bit Cg
+Auto unzip to C:\Program Files(x86)\NVIDIA Corporation\Cg  
+**Attention!** When you install Cg Toolkit, you should click on the 64bit plugin because the default mode only install the 32 bit Cg
 
 # 3.Download Other Libraries
 ## 3.1 [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page)
@@ -59,5 +59,5 @@ unzup to C:\dev\glew-2.1.0
 
 ## 5 Other
 1. **Path** += C:\Program Files (x86)\NVIDIA Corporation\Cg\bin;C:\Program Files (x86)\NVIDIA Corporation\Cg\bin.x64
-2. Put Cg.dll, CgGL.dll, freeglut.dll and glew32.dll to C:\windows\system32
+2. Put *Cg.dll, CgGL.dll, freeglut.dll* and *glew32.dll* to C:\windows\system32
 3. Run this project. If error C2589 happened, Open project properties->C/C++->preprocessor->preprocessor definition->Add NOMINMAX
