@@ -62,3 +62,12 @@ unzup to C:\dev\glew-2.1.0
 1. **Path** += C:\Program Files (x86)\NVIDIA Corporation\Cg\bin;C:\Program Files (x86)\NVIDIA Corporation\Cg\bin.x64
 2. Copy *Cg.dll, CgGL.dll, freeglut.dll* and *glew32.dll*(64-bit) to C:\windows\system32 and Copy *Cg.dll, CgGL.dll, freeglut.dll* and *glew32.dll*(32-bit) to C:\windows\SysWOW64
 3. Run this project. If error C2589 happened, Open project properties->C/C++->preprocessor->preprocessor definition->Add NOMINMAX
+
+## 6 [PBA](https://www.comp.nus.edu.sg/~tants/pbaDownload_files/pba2D-ver1.zip)
+1.Reconstruct the PBA by CUDA v10.1 in visual studio 2017
+2.Change Solution Platform to x64
+3.Set Visual Studio enviroment
+* **Additional Include directories** += C:\dev\GLAUX;C:\Program Files (x86)\NVIDIA Corporation\Cg\include;C:\dev\freeglut\include;C:\dev\glew-2.1.0\include;$(NVCUDASAMPLES_ROOT)\common\inc;$(CG_INC_PATH);$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\dev\eigen\eigen-eigen-323c052e1731;include;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath);
+* **Additional Library derectories** += C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64;C:\dev\GLAUX;C:\Program Files (x86)\NVIDIA Corporation\Cg\lib.x64;C:\dev\freeglut\lib\x64;C:\dev\glew-2.1.0\lib\Release\x64;$(NVCUDASAMPLES_ROOT)\common\lib\x64;$(CG_LIB_PATH);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(LibraryPath);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64
+* **Additional Dependencies** += cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)
+
