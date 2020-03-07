@@ -60,5 +60,5 @@ unzup to C:\dev\glew-2.1.0
 
 ## 5 Other
 1. **Path** += C:\Program Files (x86)\NVIDIA Corporation\Cg\bin;C:\Program Files (x86)\NVIDIA Corporation\Cg\bin.x64
-2. Put *Cg.dll, CgGL.dll, freeglut.dll* and *glew32.dll* to C:\windows\system32
+2. Copy *Cg.dll, CgGL.dll, freeglut.dll* and *glew32.dll*(64-bit) to C:\windows\system32 and Copy *Cg.dll, CgGL.dll, freeglut.dll* and *glew32.dll*(32-bit) to C:\windows\SysWOW64
 3. Run this project. If error C2589 happened, Open project properties->C/C++->preprocessor->preprocessor definition->Add NOMINMAX
